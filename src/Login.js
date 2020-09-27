@@ -9,8 +9,8 @@ class Login extends Component {
         this.handleChange = this.handleChange.bind(this);
         this.signup = this.signup.bind(this);
         this.state = {
-            email: '',
-            password: ''
+            email:  '',
+            password: '' 
         };
     }
 
@@ -36,12 +36,12 @@ class Login extends Component {
     }
     render() {
         return (
-            <div className="col-md-6">
+            <div className="form-container">
                 <form>
                     <div class="form-group">
                         <label for="exampleInputEmail1">Email address</label>
-                        <input value={this.state.email} onChange={this.handleChange} type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" />
-                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                        <input value={this.state.email} onChange={this.handleChange} type="email" name="email" class="form-control" id="exampleInputEmail1"  placeholder="Enter email" />
+                        
                     </div>
                     <div class="form-group">
                         <label for="exampleInputPassword1">Password</label>
